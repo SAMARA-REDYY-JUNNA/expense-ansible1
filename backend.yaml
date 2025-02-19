@@ -3,7 +3,7 @@
   become: yes
   vars:
     login_host: db.mydaws.online
-    log_password: Expenseapp@1
+    login_password: Expenseapp@1
   tasks:
   - name: disable default nodejs
     ansible.builtin.command: dnf module disable nodejs -y

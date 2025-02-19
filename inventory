@@ -1,2 +1,8 @@
 [db]
 db.mydaws.online
+
+[backend]
+backend.mydaws.online
+
+[frontend]
+mydaws.online

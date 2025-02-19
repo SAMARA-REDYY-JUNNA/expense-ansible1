@@ -15,15 +15,15 @@
     ansible.builtin.dnf:
       name: "{{ item }}"
       state: installed
-     loop:
+    loop:
       - nodejs
       - mysql
 
-    - name: create expense login_user
-    ansible.builtin.user
+  - name: create expense login_user
+    ansible.builtin.user:
       name: expense
 
-    - name: create app directory
+  - name: create app directory
     ansible.builtin.file:
     path: /app
     state: directory
